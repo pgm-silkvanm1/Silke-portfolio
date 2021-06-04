@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 77.5rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -62,7 +62,7 @@ header {
 
 main {
     padding-top: 5rem;
-    max-width: 77.5rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -235,6 +235,12 @@ main {
     margin-bottom: 5rem;
 }
 
+.social-link i{
+    color: black;
+    font-size: 1.5em;
+    
+}
+
 .container__skills {
     width: 35%;
 }
@@ -289,6 +295,26 @@ main {
     padding-bottom: 1rem;
 }
 
+.projects {
+    margin: 7rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.projects img{
+    width: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.yellow {
+    color: #efae2c
+}
+
+
+
 
 /* footer */
 
@@ -312,6 +338,11 @@ footer img {
 
 .more {
     padding: 0;
+}
+
+.more li a:hover {
+    color:black;
+    transition: 0.2s;
 }
 
 .foot {
@@ -349,6 +380,11 @@ footer li {
     width: 2rem;
     fill: white;
     margin: 0 auto;
+}
+
+.socials__item:hover {
+    fill:black;
+    transition: 1s;
 }
 
 .copyright {
