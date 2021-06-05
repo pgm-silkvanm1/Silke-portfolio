@@ -375,6 +375,7 @@ main {
     
     .container__about img {
         margin-top: 2rem;
+        width: 20rem;
     }
 
     .container__around {
