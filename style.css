@@ -26,13 +26,14 @@ header {
 }
 
 .navbar {
-    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 60rem;
+    width: 60rem;
+    max-width: 100%;
     margin: 0 auto;
 }
+
 
 .navbar__logo {
     margin: 1rem 0;
@@ -58,6 +59,26 @@ header {
 
 .navbar__list li {
     margin: 1rem;
+}
+
+
+@media (max-width: 50rem){
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        /* max-width: 100%; */
+        width: 27rem;
+        /* margin: 0 2%; */
+        justify-content: space-between;
+    }
+
+    .navbar__list li {
+        margin: 0.5rem;
+    }
 }
 
 main {
@@ -140,8 +161,25 @@ main {
     border: 1px solid #020000;
 }
 
+@media (max-width: 50rem){
+    main {
+        margin: 0 5%;
+        padding-top: 3rem;
+    }
+
+    .container__hero{
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero__decoration__image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .container__services {
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .container__services__h2 span {
@@ -150,6 +188,7 @@ main {
 }
 
 .container__services__tasks {
+    
     width: 50rem;
     max-width: 100%;
     display: flex;
@@ -160,20 +199,35 @@ main {
     margin-right: auto;
 }
 
-.task {
+.task1 {
     width: 10rem;
     flex-grow: 1;
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #efae2c;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 20px;
     padding-bottom: 2rem;
 }
 
-.task img {
+.task2 {
+    width: 10rem;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #000;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    padding-bottom: 2rem;
+}
+
+.task1 svg,
+.task2 svg {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -181,7 +235,12 @@ main {
     padding-top: 2rem;
 }
 
-.task h4 {
+.task2 svg{
+    fill: white;
+}
+
+.task1 h4,
+.task2 h4 {
     font-size: 1.5rem;
     font-weight: normal;
     text-align: center;
@@ -189,6 +248,19 @@ main {
 
 .task p {
     margin: 0.5rem;
+}
+
+
+@media (max-width: 50rem){
+    .container__services{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .hero__decoration__image {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .container__projects {
@@ -219,15 +291,16 @@ main {
 }
 
 
+@media (max-width: 50rem){
+    .container__projects__list__item img {
+        width: 22rem;
+    }
+}
 
 
 
 
-
-
-
-
-
+/* About Me */
 
 .container__about {
     display: flex;
