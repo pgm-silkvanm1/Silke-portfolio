@@ -499,3 +499,24 @@ footer li {
     font-size: 0.8rem;
     padding: 1rem;
 }
+
+@media (max-width: 50rem){
+    .footer-container {
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .foot {
+        width: 100%;
+        margin:0;
+    }
+
+    .foot h3 {
+        font-size: 1.2rem;
+    }
+
+    .socials__item {
+        width: 1.5rem;
+        margin: 0.5rem;
+    }
+}
