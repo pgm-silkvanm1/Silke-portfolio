@@ -1,5 +1,5 @@
 export const typer = () => {
-    const words = ['Front - end developer', 'Webdesigner', 'UI-UX Designer'];
+    const words = ['Front - end developer', 'Webdesigner', 'UX/UI Designer'];
     let counter = 0;
     let index = 0;
     let currentWord = '';
